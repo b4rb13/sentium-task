@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  touch-action: none;
+  width: 100%;
+  height: 100%;
+  margin: 1rem auto;
+}
+
+.dropzone {
+  height: max-content;
+  min-height: 650px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.dropzone.left {
+  margin-right: 10px;
+}
+
+.grid-item-content {
+  width: 100%;
+  height: calc(100% - 32px);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.8em;
+  & > div {
+    width: 100%;
+    height: 90%;
+  }
+}
+
+.ant-col {
+  padding: 0;
+}
+
+.grid-item {
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+}
+
+.item-wrapper {
+  padding: 16px;
+}

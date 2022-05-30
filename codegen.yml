@@ -1,0 +1,22 @@
+overwrite: true
+generates:
+  ./src/generatedHooks/index.tsx:
+    schema: http://localhost:2020
+    documents:
+      - 'src/GraphQL/**/!(*.d).{ts,tsx}'
+    config:
+      defaultMapper: any
+      reactApolloVersion: 3
+      withHooks: true
+      withComponent: false
+      withMutationFn: true
+      withRefetchFn: true
+      withResultType: true
+      withMutationOptionsType: true
+      pureMagicComment: true
+      withHOC: false
+    plugins:
+      - typescript
+      - typescript-resolvers
+      - typescript-operations
+      - typescript-react-apollo

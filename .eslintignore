@@ -1,0 +1,13 @@
+/lambda/
+/scripts
+/config
+/node_modules
+.history
+public
+dist
+.umi
+mock
+/src/generatedHooks/*
+/src/types/*
+/src/schemas/*
+style-guide.md

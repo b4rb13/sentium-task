@@ -1,0 +1,10 @@
+name: mocki
+port: 3030
+endpoints:
+  - path: /charts
+    method: get
+    responses:
+      - statusCode: 200
+    body:
+    message: Hello from Mocki!
+
