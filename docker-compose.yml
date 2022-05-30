@@ -1,0 +1,13 @@
+services:
+  frontend:
+    build: .
+    ports:
+      - '3020:3020'
+    network_mode: 'host'
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile-db
+    ports:
+      - '2020:2020'
+    network_mode: 'host'

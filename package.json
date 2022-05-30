@@ -38,15 +38,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "up": "sh run.sh",
+    "up": "docker-compose up",
     "start": "PORT=3020 craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
     "generate": "graphql-codegen --config ./codegen.yml",
-    "build:serve": "serve build",
-    "start-db": "json-graphql-server db.js --p 2020",
-    "app" : "yarn start-db & yarn build:serve"
+    "build:serve": "PORT=3020 serve build",
+    "start-db": "json-graphql-server db.js --p 3021"
 
   },
   "eslintConfig": {
